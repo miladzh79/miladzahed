@@ -1,0 +1,35 @@
+body
+{
+  
+  margin-top: 10vw !important;
+  background-color: blueviolet !important;
+}
+.calculator
+{
+  text-align: -webkit-center;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.div-table{
+  display: inline !important;
+  width: 10vw !important;
+  align-self: center;
+  background-color: aqua;
+  
+}
+.equal{
+  width: 213px;
+}
+.LCD{
+  border-style: solid;
+  border-width: medium;
+  background-color: #fff !important;
+  height: 50px;
+  width: 213px;
+}
+button{
+  margin: 0px;
+  width: 50px;
+  height: 50px;
+}

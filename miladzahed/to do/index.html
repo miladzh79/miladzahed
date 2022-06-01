@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="modal.css">
+
+<head>
+
+    <script>
+
+        function add() {
+            var li = document.createElement("li");
+            var x = document.getElementById("myInput").value;
+            if (x === '') {
+                alert("empty enter");
+            }
+            else {
+                var t = document.createTextNode(x);
+                li.appendChild(t);
+                document.getElementById("menu").appendChild(li);
+                document.getElementById("myInput").value = "";
+            }
+            //////////
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            li.appendChild(span);
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function () {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                }
+            }
+            ////
+            var span2 = document.createElement("SPAN2");
+            var txt2 = document.createTextNode("ok");
+            span2.className = "ok";
+            span2.appendChild(txt2);
+            li.appendChild(span2);
+            for (i = 0; i < ok.length; i++) {
+                ok[i].onclick = function () {
+                    var div2 = this.parentElement;
+                    div2.style.border = "thick solid #0000FF";
+                }
+            }
+            
+        }
+
+        //////////////////////
+        var close = document.getElementsByClassName("close");
+        var i;
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+/////////////////////
+        var ok = document.getElementsByClassName("ok");
+        var i;
+
+        for (i = 0; i < ok.length; i++) {
+            ok[i].onclick = function () {
+                var div3 = this.parentElement;
+                div3.style.border = "thick solid #0000FF";
+            }
+        }
+        
+
+    </script>
+</head>
+
+<body>
+    
+        <div class="top">
+            <input type="text" id="myInput" placeholder="Title...">
+            <button onclick="add()">Add</button>
+        </div>
+
+        <ul id="menu" class="ull">
+            
+        </ul>
+    
+
+
+</body>
+
+</html>

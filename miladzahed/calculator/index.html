@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+    <p id="LCD" class="LCD"></p>
+    <div class="div-table">
+        <div>
+            <button onclick="Func(1)">1</button>
+            <button onclick="Func(2)">2</button>
+            <button onclick="Func(3)">3</button>
+            <button onclick="Func('+')">+</button>
+        </div>
+        <div>
+            <button onclick="Func(4)">4</button>
+            <button onclick="Func(5)">5</button>
+            <button onclick="Func(6)">6</button>
+            <button onclick="Func('*')">*</button>
+        </div>
+        <div>
+            <button onclick="Func(7)">7</button>
+            <button onclick="Func(8)">8</button>
+            <button onclick="Func(9)">9</button>
+            <button onclick="Func('/')">/</button>
+        </div>
+        <div>
+            <button onclick="Func('c')">C</button>
+            <button onclick="Func(0)">0</button>
+            <button onclick="Func('.')">.</button>
+            <button onclick="Func('-')">-</button>
+        </div>
+        <div>
+            <button class="equal" onclick="Func('=')">=</button>
+            <!-- <button class="equal" onclick="Func('(')">(</button>
+            <button class="equal" onclick="Func(')')">)</button> -->
+        </div>
+    </div>
+</div>
+</body>
+<script src="./script.js"></script>
+
+</html>
